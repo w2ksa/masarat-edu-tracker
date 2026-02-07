@@ -1,8 +1,0 @@
-{
-  "query": "INSERT INTO teachers (full_name, phone) VALUES \n('فارس آل الشيخ', '0552578870'),\n('ريان مسفر القحطاني', '0507008853');",
-  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute INSERT INTO teachers (full_name, phone) VALUES \n('فارس آل الشيخ', '0552578870'),\n('ريان مسفر القحطاني', '0507008853');",
-  "returncode": 1,
-  "logs": [
-    "ERROR 1054 (42S22) at line 1: Unknown column 'full_name' in 'field list'"
-  ]
-}
