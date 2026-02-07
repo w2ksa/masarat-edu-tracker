@@ -49,7 +49,8 @@ const teacherNames = [
   'سعود آل زايد'
 ];
 
-const TEACHER_PASSWORD = 'aA12@gsA';
+// Teacher password should be configured via environment variables
+const TEACHER_PASSWORD = import.meta.env.VITE_TEACHER_CODE || '';
 
 export default function TeacherLogin() {
   const [selectedTeacher, setSelectedTeacher] = useState('');
