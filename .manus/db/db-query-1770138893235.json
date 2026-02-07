@@ -1,0 +1,9 @@
+{
+  "query": "SELECT teacherNameId, votingPeriodId, COUNT(*) as vote_count FROM teacher_votes GROUP BY teacherNameId, votingPeriodId HAVING COUNT(*) > 3 ORDER BY vote_count DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT teacherNameId, votingPeriodId, COUNT(*) as vote_count FROM teacher_votes GROUP BY teacherNameId, votingPeriodId HAVING COUNT(*) > 3 ORDER BY vote_count DESC LIMIT 10;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1522
+}

@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `activity_log` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`activityType` varchar(50) NOT NULL,\n\t`performedBy` varchar(255) NOT NULL,\n\t`studentId` int,\n\t`studentName` varchar(255),\n\t`pointsChange` int,\n\t`previousScore` int,\n\t`newScore` int,\n\t`details` text,\n\t`userAgent` text,\n\t`ipAddress` varchar(45),\n\t`votingPeriodId` int,\n\t`createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n\tCONSTRAINT `activity_log_id` PRIMARY KEY(`id`)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute CREATE TABLE IF NOT EXISTS `activity_log` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`activityType` varchar(50) NOT NULL,\n\t`performedBy` varchar(255) NOT NULL,\n\t`studentId` int,\n\t`studentName` varchar(255),\n\t`pointsChange` int,\n\t`previousScore` int,\n\t`newScore` int,\n\t`details` text,\n\t`userAgent` text,\n\t`ipAddress` varchar(45),\n\t`votingPeriodId` int,\n\t`createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n\tCONSTRAINT `activity_log_id` PRIMARY KEY(`id`)\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1732
+}

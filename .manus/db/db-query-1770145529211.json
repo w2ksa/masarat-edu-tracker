@@ -1,0 +1,115 @@
+{
+  "query": "SELECT grade, section, COUNT(*) as count FROM students GROUP BY grade, section ORDER BY grade, section;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT grade, section, COUNT(*) as count FROM students GROUP BY grade, section ORDER BY grade, section;",
+  "rows": [
+    {
+      "grade": "أول",
+      "section": "1",
+      "count": "16"
+    },
+    {
+      "grade": "أول",
+      "section": "2",
+      "count": "16"
+    },
+    {
+      "grade": "أول",
+      "section": "3",
+      "count": "16"
+    },
+    {
+      "grade": "الأول الابتدائي",
+      "section": "أ",
+      "count": "6"
+    },
+    {
+      "grade": "ثالث",
+      "section": "1",
+      "count": "25"
+    },
+    {
+      "grade": "ثالث",
+      "section": "2",
+      "count": "24"
+    },
+    {
+      "grade": "ثالث",
+      "section": "3",
+      "count": "22"
+    },
+    {
+      "grade": "ثاني",
+      "section": "1",
+      "count": "15"
+    },
+    {
+      "grade": "ثاني",
+      "section": "2",
+      "count": "21"
+    },
+    {
+      "grade": "ثاني",
+      "section": "3",
+      "count": "14"
+    },
+    {
+      "grade": "خامس",
+      "section": "1",
+      "count": "18"
+    },
+    {
+      "grade": "خامس",
+      "section": "2",
+      "count": "20"
+    },
+    {
+      "grade": "خامس",
+      "section": "3",
+      "count": "21"
+    },
+    {
+      "grade": "خامس",
+      "section": "4",
+      "count": "23"
+    },
+    {
+      "grade": "رابع",
+      "section": "1",
+      "count": "23"
+    },
+    {
+      "grade": "رابع",
+      "section": "2",
+      "count": "29"
+    },
+    {
+      "grade": "رابع",
+      "section": "3",
+      "count": "22"
+    },
+    {
+      "grade": "رابع",
+      "section": "4",
+      "count": "28"
+    },
+    {
+      "grade": "سادس",
+      "section": "1",
+      "count": "21"
+    },
+    {
+      "grade": "سادس",
+      "section": "2",
+      "count": "22"
+    },
+    {
+      "grade": "سادس",
+      "section": "3",
+      "count": "23"
+    }
+  ],
+  "messages": [],
+  "stdout": "grade\tsection\tcount\nأول\t1\t16\nأول\t2\t16\nأول\t3\t16\nالأول الابتدائي\tأ\t6\nثالث\t1\t25\nثالث\t2\t24\nثالث\t3\t22\nثاني\t1\t15\nثاني\t2\t21\nثاني\t3\t14\nخامس\t1\t18\nخامس\t2\t20\nخامس\t3\t21\nخامس\t4\t23\nرابع\t1\t23\nرابع\t2\t29\nرابع\t3\t22\nرابع\t4\t28\nسادس\t1\t21\nسادس\t2\t22\nسادس\t3\t23\n",
+  "stderr": "",
+  "execution_time_ms": 1608
+}

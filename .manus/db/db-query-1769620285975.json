@@ -1,0 +1,15 @@
+{
+  "query": "SELECT * FROM teacher_names WHERE fullName LIKE '%أحمد%بحيري%' OR fullName LIKE '%بحيري%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT * FROM teacher_names WHERE fullName LIKE '%أحمد%بحيري%' OR fullName LIKE '%بحيري%';",
+  "rows": [
+    {
+      "id": "15",
+      "fullName": "أحمد بحيري عوض النار",
+      "createdAt": "2026-01-28 12:19:04"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tfullName\tcreatedAt\n15\tأحمد بحيري عوض النار\t2026-01-28 12:19:04\n",
+  "stderr": "",
+  "execution_time_ms": 1515
+}

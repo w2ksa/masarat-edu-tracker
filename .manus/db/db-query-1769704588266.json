@@ -1,0 +1,13 @@
+{
+  "query": "SELECT COUNT(*) as total_students FROM students;\nSELECT fullName, COUNT(*) as count FROM students GROUP BY fullName HAVING count > 1 ORDER BY count DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT COUNT(*) as total_students FROM students;\nSELECT fullName, COUNT(*) as count FROM students GROUP BY fullName HAVING count > 1 ORDER BY count DESC LIMIT 10;",
+  "rows": [
+    {
+      "total_students": "424"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_students\n424\n",
+  "stderr": "",
+  "execution_time_ms": 1779
+}

@@ -1,0 +1,94 @@
+{
+  "query": "SELECT DISTINCT grade, section FROM students ORDER BY grade, section LIMIT 30;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT DISTINCT grade, section FROM students ORDER BY grade, section LIMIT 30;",
+  "rows": [
+    {
+      "grade": "أول",
+      "section": "1"
+    },
+    {
+      "grade": "أول",
+      "section": "2"
+    },
+    {
+      "grade": "أول",
+      "section": "3"
+    },
+    {
+      "grade": "الأول الابتدائي",
+      "section": "أ"
+    },
+    {
+      "grade": "ثالث",
+      "section": "1"
+    },
+    {
+      "grade": "ثالث",
+      "section": "2"
+    },
+    {
+      "grade": "ثالث",
+      "section": "3"
+    },
+    {
+      "grade": "ثاني",
+      "section": "1"
+    },
+    {
+      "grade": "ثاني",
+      "section": "2"
+    },
+    {
+      "grade": "ثاني",
+      "section": "3"
+    },
+    {
+      "grade": "خامس",
+      "section": "1"
+    },
+    {
+      "grade": "خامس",
+      "section": "2"
+    },
+    {
+      "grade": "خامس",
+      "section": "3"
+    },
+    {
+      "grade": "خامس",
+      "section": "4"
+    },
+    {
+      "grade": "رابع",
+      "section": "1"
+    },
+    {
+      "grade": "رابع",
+      "section": "2"
+    },
+    {
+      "grade": "رابع",
+      "section": "3"
+    },
+    {
+      "grade": "رابع",
+      "section": "4"
+    },
+    {
+      "grade": "سادس",
+      "section": "1"
+    },
+    {
+      "grade": "سادس",
+      "section": "2"
+    },
+    {
+      "grade": "سادس",
+      "section": "3"
+    }
+  ],
+  "messages": [],
+  "stdout": "grade\tsection\nأول\t1\nأول\t2\nأول\t3\nالأول الابتدائي\tأ\nثالث\t1\nثالث\t2\nثالث\t3\nثاني\t1\nثاني\t2\nثاني\t3\nخامس\t1\nخامس\t2\nخامس\t3\nخامس\t4\nرابع\t1\nرابع\t2\nرابع\t3\nرابع\t4\nسادس\t1\nسادس\t2\nسادس\t3\n",
+  "stderr": "",
+  "execution_time_ms": 1620
+}

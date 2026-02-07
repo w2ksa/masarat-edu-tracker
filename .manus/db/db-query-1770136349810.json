@@ -1,0 +1,38 @@
+{
+  "query": "SELECT grade, COUNT(*) as count FROM students GROUP BY grade ORDER BY grade;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT grade, COUNT(*) as count FROM students GROUP BY grade ORDER BY grade;",
+  "rows": [
+    {
+      "grade": "أول",
+      "count": "48"
+    },
+    {
+      "grade": "الأول الابتدائي",
+      "count": "6"
+    },
+    {
+      "grade": "ثالث",
+      "count": "71"
+    },
+    {
+      "grade": "ثاني",
+      "count": "50"
+    },
+    {
+      "grade": "خامس",
+      "count": "82"
+    },
+    {
+      "grade": "رابع",
+      "count": "102"
+    },
+    {
+      "grade": "سادس",
+      "count": "66"
+    }
+  ],
+  "messages": [],
+  "stdout": "grade\tcount\nأول\t48\nالأول الابتدائي\t6\nثالث\t71\nثاني\t50\nخامس\t82\nرابع\t102\nسادس\t66\n",
+  "stderr": "",
+  "execution_time_ms": 1515
+}

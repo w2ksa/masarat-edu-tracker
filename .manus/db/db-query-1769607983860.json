@@ -1,0 +1,13 @@
+{
+  "query": "SELECT COUNT(*) as count FROM students WHERE grade = 'الرابع الابتدائي';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT COUNT(*) as count FROM students WHERE grade = 'الرابع الابتدائي';",
+  "rows": [
+    {
+      "count": "116"
+    }
+  ],
+  "messages": [],
+  "stdout": "count\n116\n",
+  "stderr": "",
+  "execution_time_ms": 1502
+}

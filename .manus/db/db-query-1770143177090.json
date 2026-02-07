@@ -1,0 +1,20 @@
+{
+  "query": "SELECT * FROM voting_periods WHERE status = 'open' ORDER BY id DESC LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT * FROM voting_periods WHERE status = 'open' ORDER BY id DESC LIMIT 1;",
+  "rows": [
+    {
+      "id": "180002",
+      "weekNumber": "1",
+      "year": "2026",
+      "startDate": "2026-02-03 13:32:15",
+      "endDate": "2026-02-10 13:32:15",
+      "status": "open",
+      "createdAt": "2026-02-03 13:32:15",
+      "updatedAt": "2026-02-03 13:32:15"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tweekNumber\tyear\tstartDate\tendDate\tstatus\tcreatedAt\tupdatedAt\n180002\t1\t2026\t2026-02-03 13:32:15\t2026-02-10 13:32:15\topen\t2026-02-03 13:32:15\t2026-02-03 13:32:15\n",
+  "stderr": "",
+  "execution_time_ms": 1605
+}

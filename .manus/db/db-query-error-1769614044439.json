@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO voting_periods (week_number, year, start_date, end_date, is_active, created_at) VALUES (5, 2026, '2026-01-28', '2026-02-03', 1, NOW());",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute INSERT INTO voting_periods (week_number, year, start_date, end_date, is_active, created_at) VALUES (5, 2026, '2026-01-28', '2026-02-03', 1, NOW());",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'week_number' in 'field list'"
+  ]
+}

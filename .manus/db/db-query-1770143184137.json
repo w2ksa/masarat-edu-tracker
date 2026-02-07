@@ -1,0 +1,14 @@
+{
+  "query": "SELECT COUNT(*) as total_votes, COUNT(DISTINCT teacherNameId) as unique_teachers FROM teacher_votes WHERE votingPeriodId = (SELECT id FROM voting_periods WHERE status = 'open' ORDER BY id DESC LIMIT 1);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT COUNT(*) as total_votes, COUNT(DISTINCT teacherNameId) as unique_teachers FROM teacher_votes WHERE votingPeriodId = (SELECT id FROM voting_periods WHERE status = 'open' ORDER BY id DESC LIMIT 1);",
+  "rows": [
+    {
+      "total_votes": "54",
+      "unique_teachers": "18"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_votes\tunique_teachers\n54\t18\n",
+  "stderr": "",
+  "execution_time_ms": 1605
+}

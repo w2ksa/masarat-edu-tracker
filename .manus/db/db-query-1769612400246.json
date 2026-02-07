@@ -1,0 +1,19 @@
+{
+  "query": "SELECT DISTINCT grade FROM students;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT DISTINCT grade FROM students;",
+  "rows": [
+    {
+      "grade": "الخامس الابتدائي"
+    },
+    {
+      "grade": "السادس الابتدائي"
+    },
+    {
+      "grade": "الرابع الابتدائي"
+    }
+  ],
+  "messages": [],
+  "stdout": "grade\nالخامس الابتدائي\nالسادس الابتدائي\nالرابع الابتدائي\n",
+  "stderr": "",
+  "execution_time_ms": 1535
+}

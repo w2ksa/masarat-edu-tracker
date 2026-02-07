@@ -1,0 +1,30 @@
+{
+  "query": "SELECT COUNT(*) as count, grade, section FROM students WHERE grade = 'رابع' GROUP BY grade, section;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT COUNT(*) as count, grade, section FROM students WHERE grade = 'رابع' GROUP BY grade, section;",
+  "rows": [
+    {
+      "count": "29",
+      "grade": "رابع",
+      "section": "2"
+    },
+    {
+      "count": "22",
+      "grade": "رابع",
+      "section": "3"
+    },
+    {
+      "count": "23",
+      "grade": "رابع",
+      "section": "1"
+    },
+    {
+      "count": "28",
+      "grade": "رابع",
+      "section": "4"
+    }
+  ],
+  "messages": [],
+  "stdout": "count\tgrade\tsection\n29\tرابع\t2\n22\tرابع\t3\n23\tرابع\t1\n28\tرابع\t4\n",
+  "stderr": "",
+  "execution_time_ms": 1489
+}

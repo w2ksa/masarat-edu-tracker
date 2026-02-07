@@ -1,0 +1,52 @@
+{
+  "query": "SELECT grade, COUNT(*) as total_students, SUM(score) as total_score, AVG(score) as avg_score FROM students GROUP BY grade ORDER BY grade;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT grade, COUNT(*) as total_students, SUM(score) as total_score, AVG(score) as avg_score FROM students GROUP BY grade ORDER BY grade;",
+  "rows": [
+    {
+      "grade": "أول",
+      "total_students": "48",
+      "total_score": "85",
+      "avg_score": "1.7708"
+    },
+    {
+      "grade": "الأول الابتدائي",
+      "total_students": "6",
+      "total_score": "0",
+      "avg_score": "0.0000"
+    },
+    {
+      "grade": "ثالث",
+      "total_students": "71",
+      "total_score": "10",
+      "avg_score": "0.1408"
+    },
+    {
+      "grade": "ثاني",
+      "total_students": "50",
+      "total_score": "0",
+      "avg_score": "0.0000"
+    },
+    {
+      "grade": "خامس",
+      "total_students": "82",
+      "total_score": "0",
+      "avg_score": "0.0000"
+    },
+    {
+      "grade": "رابع",
+      "total_students": "102",
+      "total_score": "10",
+      "avg_score": "0.0980"
+    },
+    {
+      "grade": "سادس",
+      "total_students": "66",
+      "total_score": "0",
+      "avg_score": "0.0000"
+    }
+  ],
+  "messages": [],
+  "stdout": "grade\ttotal_students\ttotal_score\tavg_score\nأول\t48\t85\t1.7708\nالأول الابتدائي\t6\t0\t0.0000\nثالث\t71\t10\t0.1408\nثاني\t50\t0\t0.0000\nخامس\t82\t0\t0.0000\nرابع\t102\t10\t0.0980\nسادس\t66\t0\t0.0000\n",
+  "stderr": "",
+  "execution_time_ms": 1528
+}

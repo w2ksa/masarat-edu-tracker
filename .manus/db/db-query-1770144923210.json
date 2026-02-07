@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO system_settings (setting_key, setting_value, description) VALUES ('content_submission_enabled', 'true', 'Enable or disable content submission for students') ON DUPLICATE KEY UPDATE setting_value = setting_value;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute INSERT INTO system_settings (setting_key, setting_value, description) VALUES ('content_submission_enabled', 'true', 'Enable or disable content submission for students') ON DUPLICATE KEY UPDATE setting_value = setting_value;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1512
+}

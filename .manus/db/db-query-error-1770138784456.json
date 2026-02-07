@@ -1,0 +1,8 @@
+{
+  "query": "SELECT tv.id, tv.studentId, tv.voteRank, tv.createdAt, tn.name as teacher_name FROM teacher_votes tv JOIN teacher_names tn ON tv.teacherNameId = tn.id WHERE tv.studentId = 121318 ORDER BY tv.createdAt DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT tv.id, tv.studentId, tv.voteRank, tv.createdAt, tn.name as teacher_name FROM teacher_votes tv JOIN teacher_names tn ON tv.teacherNameId = tn.id WHERE tv.studentId = 121318 ORDER BY tv.createdAt DESC;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'tn.name' in 'field list'"
+  ]
+}

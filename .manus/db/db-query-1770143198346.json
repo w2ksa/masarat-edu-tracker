@@ -1,0 +1,106 @@
+{
+  "query": "SELECT id, activityType, performedBy, studentName, pointsChange, previousScore, newScore, userAgent, ipAddress, createdAt \nFROM activity_log \nORDER BY createdAt DESC LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT id, activityType, performedBy, studentName, pointsChange, previousScore, newScore, userAgent, ipAddress, createdAt \nFROM activity_log \nORDER BY createdAt DESC LIMIT 20;",
+  "rows": [
+    {
+      "id": "8",
+      "activityType": "add_score",
+      "performedBy": "Test Admin",
+      "studentName": "أحمد سلطان عسيري",
+      "pointsChange": "0",
+      "previousScore": "95",
+      "newScore": "95",
+      "userAgent": "غير معروف",
+      "ipAddress": "غير معروف",
+      "createdAt": "2026-02-03 18:25:59"
+    },
+    {
+      "id": "7",
+      "activityType": "add_score",
+      "performedBy": "Test Admin",
+      "studentName": "أحمد سلطان عسيري",
+      "pointsChange": "0",
+      "previousScore": "95",
+      "newScore": "95",
+      "userAgent": "غير معروف",
+      "ipAddress": "غير معروف",
+      "createdAt": "2026-02-03 18:25:33"
+    },
+    {
+      "id": "6",
+      "activityType": "add_score",
+      "performedBy": "Test Admin",
+      "studentName": "أحمد سلطان عسيري",
+      "pointsChange": "0",
+      "previousScore": "95",
+      "newScore": "95",
+      "userAgent": "غير معروف",
+      "ipAddress": "غير معروف",
+      "createdAt": "2026-02-03 18:25:05"
+    },
+    {
+      "id": "5",
+      "activityType": "add_score",
+      "performedBy": "Test Admin",
+      "studentName": "أحمد سلطان عسيري",
+      "pointsChange": "0",
+      "previousScore": "95",
+      "newScore": "95",
+      "userAgent": "غير معروف",
+      "ipAddress": "غير معروف",
+      "createdAt": "2026-02-03 18:24:41"
+    },
+    {
+      "id": "4",
+      "activityType": "add_score",
+      "performedBy": "Test Admin",
+      "studentName": "أحمد سلطان عسيري",
+      "pointsChange": "0",
+      "previousScore": "95",
+      "newScore": "95",
+      "userAgent": "غير معروف",
+      "ipAddress": "غير معروف",
+      "createdAt": "2026-02-03 18:08:31"
+    },
+    {
+      "id": "3",
+      "activityType": "add_score",
+      "performedBy": "Test Admin",
+      "studentName": "أحمد سلطان عسيري",
+      "pointsChange": "0",
+      "previousScore": "95",
+      "newScore": "95",
+      "userAgent": "غير معروف",
+      "ipAddress": "غير معروف",
+      "createdAt": "2026-02-03 17:42:23"
+    },
+    {
+      "id": "2",
+      "activityType": "add_score",
+      "performedBy": "Test Admin",
+      "studentName": "أحمد سلطان عسيري",
+      "pointsChange": "0",
+      "previousScore": "95",
+      "newScore": "95",
+      "userAgent": "غير معروف",
+      "ipAddress": "غير معروف",
+      "createdAt": "2026-02-03 17:41:20"
+    },
+    {
+      "id": "1",
+      "activityType": "add_score",
+      "performedBy": "Test Admin",
+      "studentName": "أحمد سلطان عسيري",
+      "pointsChange": "0",
+      "previousScore": "95",
+      "newScore": "95",
+      "userAgent": "غير معروف",
+      "ipAddress": "غير معروف",
+      "createdAt": "2026-02-03 17:36:50"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tactivityType\tperformedBy\tstudentName\tpointsChange\tpreviousScore\tnewScore\tuserAgent\tipAddress\tcreatedAt\n8\tadd_score\tTest Admin\tأحمد سلطان عسيري\t0\t95\t95\tغير معروف\tغير معروف\t2026-02-03 18:25:59\n7\tadd_score\tTest Admin\tأحمد سلطان عسيري\t0\t95\t95\tغير معروف\tغير معروف\t2026-02-03 18:25:33\n6\tadd_score\tTest Admin\tأحمد سلطان عسيري\t0\t95\t95\tغير معروف\tغير معروف\t2026-02-03 18:25:05\n5\tadd_score\tTest Admin\tأحمد سلطان عسيري\t0\t95\t95\tغير معروف\tغير معروف\t2026-02-03 18:24:41\n4\tadd_score\tTest Admin\tأحمد سلطان عسيري\t0\t95\t95\tغير معروف\tغير معروف\t2026-02-03 18:08:31\n3\tadd_score\tTest Admin\tأحمد سلطان عسيري\t0\t95\t95\tغير معروف\tغير معروف\t2026-02-03 17:42:23\n2\tadd_score\tTest Admin\tأحمد سلطان عسيري\t0\t95\t95\tغير معروف\tغير معروف\t2026-02-03 17:41:20\n1\tadd_score\tTest Admin\tأحمد سلطان عسيري\t0\t95\t95\tغير معروف\tغير معروف\t2026-02-03 17:36:50\n",
+  "stderr": "",
+  "execution_time_ms": 1586
+}

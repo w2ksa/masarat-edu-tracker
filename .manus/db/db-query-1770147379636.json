@@ -1,0 +1,24 @@
+{
+  "query": "SELECT id, fullName, grade, section, score FROM students WHERE fullName LIKE '%عزام%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT id, fullName, grade, section, score FROM students WHERE fullName LIKE '%عزام%';",
+  "rows": [
+    {
+      "id": "121374",
+      "fullName": "عزام يحي رشيد آل فرحان",
+      "grade": "ثاني",
+      "section": "1",
+      "score": "0"
+    },
+    {
+      "id": "121458",
+      "fullName": "عزام محمد علي عسيري",
+      "grade": "ثالث",
+      "section": "2",
+      "score": "10"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tfullName\tgrade\tsection\tscore\n121374\tعزام يحي رشيد آل فرحان\tثاني\t1\t0\n121458\tعزام محمد علي عسيري\tثالث\t2\t10\n",
+  "stderr": "",
+  "execution_time_ms": 1616
+}

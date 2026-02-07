@@ -1,0 +1,16 @@
+{
+  "query": "SELECT COUNT(*) as total_students, SUM(score) as total_points, AVG(score) as avg_points, MAX(score) as max_points FROM students;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT COUNT(*) as total_students, SUM(score) as total_points, AVG(score) as avg_points, MAX(score) as max_points FROM students;",
+  "rows": [
+    {
+      "total_students": "425",
+      "total_points": "575",
+      "avg_points": "1.3529",
+      "max_points": "95"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_students\ttotal_points\tavg_points\tmax_points\n425\t575\t1.3529\t95\n",
+  "stderr": "",
+  "execution_time_ms": 1621
+}

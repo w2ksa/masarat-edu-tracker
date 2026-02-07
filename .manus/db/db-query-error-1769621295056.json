@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE teacher_votes \nADD COLUMN teacherNameId INT NOT NULL AFTER id,\nADD CONSTRAINT fk_teacher_votes_teacher_name \nFOREIGN KEY (teacherNameId) REFERENCES teacher_names(id) ON DELETE CASCADE;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute ALTER TABLE teacher_votes \nADD COLUMN teacherNameId INT NOT NULL AFTER id,\nADD CONSTRAINT fk_teacher_votes_teacher_name \nFOREIGN KEY (teacherNameId) REFERENCES teacher_names(id) ON DELETE CASCADE;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1060 (42S21) at line 1: Duplicate column name 'teacherNameId'"
+  ]
+}

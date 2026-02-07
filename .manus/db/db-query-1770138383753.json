@@ -1,0 +1,22 @@
+{
+  "query": "SELECT s.id, s.fullName, s.score, COUNT(v.id) as vote_count FROM students s LEFT JOIN teacher_votes v ON s.id = v.studentId WHERE s.fullName LIKE '%أحمد سلطان%' GROUP BY s.id, s.fullName, s.score;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT s.id, s.fullName, s.score, COUNT(v.id) as vote_count FROM students s LEFT JOIN teacher_votes v ON s.id = v.studentId WHERE s.fullName LIKE '%أحمد سلطان%' GROUP BY s.id, s.fullName, s.score;",
+  "rows": [
+    {
+      "id": "121737",
+      "fullName": "أحمد سلطان عسيري",
+      "score": "0",
+      "vote_count": "0"
+    },
+    {
+      "id": "121318",
+      "fullName": "أحمد سلطان عسيري",
+      "score": "95",
+      "vote_count": "4"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tfullName\tscore\tvote_count\n121737\tأحمد سلطان عسيري\t0\t0\n121318\tأحمد سلطان عسيري\t95\t4\n",
+  "stderr": "",
+  "execution_time_ms": 1500
+}

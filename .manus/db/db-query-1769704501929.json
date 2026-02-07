@@ -1,0 +1,76 @@
+{
+  "query": "SELECT COUNT(*) as total_students FROM students;\nSELECT fullName, COUNT(*) as count FROM students GROUP BY fullName HAVING count > 1 ORDER BY count DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT COUNT(*) as total_students FROM students;\nSELECT fullName, COUNT(*) as count FROM students GROUP BY fullName HAVING count > 1 ORDER BY count DESC;",
+  "rows": [
+    {
+      "total_students": "439"
+    },
+    {
+      "total_students": "fullName\tcount"
+    },
+    {
+      "total_students": "جابر علي جابر\t2"
+    },
+    {
+      "total_students": "إلياس أسامة المصطفى\t2"
+    },
+    {
+      "total_students": "لؤي سلطان الفيفي\t2"
+    },
+    {
+      "total_students": "بندر حمد القحطاني\t2"
+    },
+    {
+      "total_students": "بدر فيصل طبيقي\t2"
+    },
+    {
+      "total_students": "سعود ناصر الشهري\t2"
+    },
+    {
+      "total_students": "مهند أيمن آل مطاعن\t2"
+    },
+    {
+      "total_students": "باسل سعود الزهراني\t2"
+    },
+    {
+      "total_students": "أحمد سلطان عسيري\t2"
+    },
+    {
+      "total_students": "عبدالله سعيد القحطاني\t2"
+    },
+    {
+      "total_students": "محمد عبدالعزيز القحطاني\t2"
+    },
+    {
+      "total_students": "تركي محمد الزهراني\t2"
+    },
+    {
+      "total_students": "عمار محمد المهجري\t2"
+    },
+    {
+      "total_students": "يوسف محمد عسيري\t2"
+    },
+    {
+      "total_students": "فهد حسن عسيري\t2"
+    },
+    {
+      "total_students": "معن صالح الجواهرة\t2"
+    },
+    {
+      "total_students": "علي أحمد الربعي\t2"
+    },
+    {
+      "total_students": "أصيل صالح القحطاني\t2"
+    },
+    {
+      "total_students": "فيصل فهد القيسي\t2"
+    },
+    {
+      "total_students": "حاتم محمد الراقدي\t2"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_students\n439\nfullName\tcount\nجابر علي جابر\t2\nإلياس أسامة المصطفى\t2\nلؤي سلطان الفيفي\t2\nبندر حمد القحطاني\t2\nبدر فيصل طبيقي\t2\nسعود ناصر الشهري\t2\nمهند أيمن آل مطاعن\t2\nباسل سعود الزهراني\t2\nأحمد سلطان عسيري\t2\nعبدالله سعيد القحطاني\t2\nمحمد عبدالعزيز القحطاني\t2\nتركي محمد الزهراني\t2\nعمار محمد المهجري\t2\nيوسف محمد عسيري\t2\nفهد حسن عسيري\t2\nمعن صالح الجواهرة\t2\nعلي أحمد الربعي\t2\nأصيل صالح القحطاني\t2\nفيصل فهد القيسي\t2\nحاتم محمد الراقدي\t2\n",
+  "stderr": "",
+  "execution_time_ms": 1776
+}

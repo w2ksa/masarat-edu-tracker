@@ -1,0 +1,9 @@
+{
+  "query": "\n-- حذف السجلات الزائدة بشكل عشوائي للوصول إلى 425 طالب\nDELETE FROM students \nWHERE id IN (\n  SELECT id FROM (\n    SELECT id, ROW_NUMBER() OVER (ORDER BY id) as rn\n    FROM students\n  ) as temp\n  WHERE rn > 425\n);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute \n-- حذف السجلات الزائدة بشكل عشوائي للوصول إلى 425 طالب\nDELETE FROM students \nWHERE id IN (\n  SELECT id FROM (\n    SELECT id, ROW_NUMBER() OVER (ORDER BY id) as rn\n    FROM students\n  ) as temp\n  WHERE rn > 425\n);\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1519
+}

@@ -1,0 +1,15 @@
+{
+  "query": "SELECT \n  COUNT(*) as total_students,\n  COUNT(DISTINCT fullName) as unique_names,\n  COUNT(DISTINCT CONCAT(fullName, '-', grade, '-', section)) as unique_records\nFROM students;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 35xPkBa73Yuiy4A.root --database kcQuJzmxhkjxjyE5pHTEwG --execute SELECT \n  COUNT(*) as total_students,\n  COUNT(DISTINCT fullName) as unique_names,\n  COUNT(DISTINCT CONCAT(fullName, '-', grade, '-', section)) as unique_records\nFROM students;",
+  "rows": [
+    {
+      "total_students": "791",
+      "unique_names": "668",
+      "unique_records": "791"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_students\tunique_names\tunique_records\n791\t668\t791\n",
+  "stderr": "",
+  "execution_time_ms": 2056
+}
