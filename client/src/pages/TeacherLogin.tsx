@@ -68,9 +68,11 @@ export default function TeacherLogin() {
       return;
     }
 
-    // Save teacher name in session storage
+    // Save teacher name and auth state in session storage
     sessionStorage.setItem('teacherName', selectedTeacher);
-    
+    sessionStorage.setItem('userRole', 'teacher');
+    sessionStorage.setItem('isAuthenticated', 'true');
+
     toast.success(`مرحباً ${selectedTeacher}`);
     setLocation('/teacher/voting');
   };

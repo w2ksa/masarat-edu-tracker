@@ -176,6 +176,8 @@ export default function AdminControl() {
 
   const handleLogout = () => {
     sessionStorage.clear();
+    localStorage.removeItem("userRole");
+    localStorage.removeItem("isAuthenticated");
     toast.success("تم تسجيل الخروج بنجاح");
     setLocation("/");
   };

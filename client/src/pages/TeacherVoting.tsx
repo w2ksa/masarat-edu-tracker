@@ -53,6 +53,10 @@ export default function TeacherVoting() {
 
   const handleLogout = () => {
     sessionStorage.clear();
+    localStorage.removeItem("userRole");
+    localStorage.removeItem("isAuthenticated");
+    localStorage.removeItem("teacherId");
+    localStorage.removeItem("teacherName");
     toast.success("تم تسجيل الخروج بنجاح");
     setLocation("/");
   };
