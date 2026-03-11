@@ -397,7 +397,7 @@ export default function Home() {
               <Button
                 variant={selectedGrade === "all" ? "default" : "outline"}
                 size="sm"
-                onClick={() => setSelectedGrade("all")}
+                onClick={() => { setSelectedGrade("all"); setSelectedSection(undefined); }}
                 className={`text-xs sm:text-sm ${selectedGrade === "all" ? "bg-blue-600 hover:bg-blue-700" : "bg-transparent border-slate-600 text-slate-300 hover:bg-slate-700"}`}
               >
                 الكل
@@ -405,7 +405,7 @@ export default function Home() {
               <Button
                 variant={selectedGrade === "أول" ? "default" : "outline"}
                 size="sm"
-                onClick={() => setSelectedGrade("أول")}
+                onClick={() => { setSelectedGrade("أول"); setSelectedSection(undefined); }}
                 className={`text-xs sm:text-sm ${selectedGrade === "أول" ? "bg-blue-600 hover:bg-blue-700" : "bg-transparent border-slate-600 text-slate-300 hover:bg-slate-700"}`}
               >
                 الأول الابتدائي
@@ -413,7 +413,7 @@ export default function Home() {
               <Button
                 variant={selectedGrade === "ثاني" ? "default" : "outline"}
                 size="sm"
-                onClick={() => setSelectedGrade("ثاني")}
+                onClick={() => { setSelectedGrade("ثاني"); setSelectedSection(undefined); }}
                 className={`text-xs sm:text-sm ${selectedGrade === "ثاني" ? "bg-blue-600 hover:bg-blue-700" : "bg-transparent border-slate-600 text-slate-300 hover:bg-slate-700"}`}
               >
                 الثاني الابتدائي
@@ -421,7 +421,7 @@ export default function Home() {
               <Button
                 variant={selectedGrade === "ثالث" ? "default" : "outline"}
                 size="sm"
-                onClick={() => setSelectedGrade("ثالث")}
+                onClick={() => { setSelectedGrade("ثالث"); setSelectedSection(undefined); }}
                 className={`text-xs sm:text-sm ${selectedGrade === "ثالث" ? "bg-blue-600 hover:bg-blue-700" : "bg-transparent border-slate-600 text-slate-300 hover:bg-slate-700"}`}
               >
                 الثالث الابتدائي
@@ -429,7 +429,7 @@ export default function Home() {
               <Button
                 variant={selectedGrade === "رابع" ? "default" : "outline"}
                 size="sm"
-                onClick={() => setSelectedGrade("رابع")}
+                onClick={() => { setSelectedGrade("رابع"); setSelectedSection(undefined); }}
                 className={`text-xs sm:text-sm ${selectedGrade === "رابع" ? "bg-blue-600 hover:bg-blue-700" : "bg-transparent border-slate-600 text-slate-300 hover:bg-slate-700"}`}
               >
                 الرابع الابتدائي
@@ -437,7 +437,7 @@ export default function Home() {
               <Button
                 variant={selectedGrade === "خامس" ? "default" : "outline"}
                 size="sm"
-                onClick={() => setSelectedGrade("خامس")}
+                onClick={() => { setSelectedGrade("خامس"); setSelectedSection(undefined); }}
                 className={`text-xs sm:text-sm ${selectedGrade === "خامس" ? "bg-blue-600 hover:bg-blue-700" : "bg-transparent border-slate-600 text-slate-300 hover:bg-slate-700"}`}
               >
                 الخامس الابتدائي
@@ -445,7 +445,7 @@ export default function Home() {
               <Button
                 variant={selectedGrade === "سادس" ? "default" : "outline"}
                 size="sm"
-                onClick={() => setSelectedGrade("سادس")}
+                onClick={() => { setSelectedGrade("سادس"); setSelectedSection(undefined); }}
                 className={`text-xs sm:text-sm ${selectedGrade === "سادس" ? "bg-blue-600 hover:bg-blue-700" : "bg-transparent border-slate-600 text-slate-300 hover:bg-slate-700"}`}
               >
                 السادس الابتدائي
