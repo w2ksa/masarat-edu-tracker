@@ -267,8 +267,8 @@ export const appRouter = router({
           ipAddress: ipAddress,
         });
         
-        // إرسال إشعار عند وصول الطالب لمستوى "قُدوة" (600+)
-        if (input.score >= 600) {
+        // إرسال إشعار عند وصول الطالب لمستوى "قُدوة" (500+)
+        if (input.score >= 500) {
           const student = await db.getStudentById(input.studentId);
           if (student) {
             // إشعار لجميع الإداريين
@@ -492,11 +492,11 @@ export const appRouter = router({
         return { success: true };
       }),
 
-    submitVotes: protectedProcedure
+    submitVotes: publicProcedure
       .input(
         z.object({
           studentIds: z.array(z.number()).length(3),
-      teacherName: z.string(),
+          teacherName: z.string(),
         })
       )
       .mutation(async ({ ctx, input }) => {
@@ -679,7 +679,7 @@ export const appRouter = router({
       const totalStudents = students.length;
       const totalScore = students.reduce((sum, s) => sum + (s.score || 0), 0);
       const averageScore = totalStudents > 0 ? totalScore / totalStudents : 0;
-      const excellentStudents = students.filter(s => (s.score || 0) >= 600).length;
+      const excellentStudents = students.filter(s => (s.score || 0) >= 500).length;
       
       // التصويتات الأسبوعية
       let weeklyVotes = 0;
